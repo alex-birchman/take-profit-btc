@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/take-profit-btc/static/css/main.b59b9dfe.chunk.css",
-    "main.js": "/take-profit-btc/static/js/main.e061c6a3.chunk.js",
-    "main.js.map": "/take-profit-btc/static/js/main.e061c6a3.chunk.js.map",
+    "main.js": "/take-profit-btc/static/js/main.b4b85f2d.chunk.js",
+    "main.js.map": "/take-profit-btc/static/js/main.b4b85f2d.chunk.js.map",
     "runtime-main.js": "/take-profit-btc/static/js/runtime-main.91bfd2cd.js",
     "runtime-main.js.map": "/take-profit-btc/static/js/runtime-main.91bfd2cd.js.map",
     "static/js/2.ca6f2090.chunk.js": "/take-profit-btc/static/js/2.ca6f2090.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.91bfd2cd.js",
     "static/js/2.ca6f2090.chunk.js",
     "static/css/main.b59b9dfe.chunk.css",
-    "static/js/main.e061c6a3.chunk.js"
+    "static/js/main.b4b85f2d.chunk.js"
   ]
 }
