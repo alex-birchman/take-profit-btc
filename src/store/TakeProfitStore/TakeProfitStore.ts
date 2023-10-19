@@ -17,6 +17,7 @@ import {
   addNextProfitTarget,
   calculateProjectedProfit,
 } from "./TakeProfitStore.utils";
+import { product } from "ramda";
 
 const inititalValidation = {
   maxSumProfitTargetsError: null,
@@ -96,6 +97,7 @@ export class TakeProfitStore implements ITakeProfitStore {
 
     // reset validation errors
     this.validation = inititalValidation;
+    profit.isError = false;
   }
 
   @action.bound
@@ -116,6 +118,11 @@ export class TakeProfitStore implements ITakeProfitStore {
   @action.bound
   public removeProfitTarget(id: string) {
     this.profitTargets = this.profitTargets.filter((p) => p.id !== id);
+
+    if (!this.profitTargets.find((p) => p.isError)) {
+      this.validation = inititalValidation;
+    }
+
     if (this.profitTargets.length === 0) {
       this.toggleProfit();
     }
