@@ -1,7 +1,15 @@
 import React from "react";
 import { observer } from "mobx-react";
+import {
+  TableContainer,
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
+} from "@material-ui/core";
 
-import { ErrorMessage } from "components/ErrorMessage/ErrorMessage";
+import { ErrorMessage } from "components";
 
 import { ProfitTarget } from "../ProfitTarget/ProfitTarget";
 import { AddProfitButton } from "../AddProfitButton/AddProfitButton";
@@ -11,6 +19,13 @@ import { useTakeProfitStore } from "store/context";
 import { MAX_PROFIT_TARGETS } from "store/TakeProfitStore/TakeProfitStore.const";
 
 import styles from "./ProfitTargetList.module.scss";
+
+const tableHeaderStyles = {
+  borderBottom: "none",
+  color: "#A2A7B9",
+  fontSize: "12px",
+  fontWeight: 500,
+};
 
 const ProfitTargetList = observer(() => {
   const {
@@ -25,23 +40,51 @@ const ProfitTargetList = observer(() => {
   } = useTakeProfitStore();
 
   return (
-    <div className={styles.root}>
-      <div className={styles.header}>
-        <span className={styles.headerProfit}>Profit</span>
-        <span className={styles.headerPrice}>Target price</span>
-        <span className={styles.headerAmount}>Amount to sell</span>
-      </div>
-      <div className={styles.body}>
-        {profitTargets.map((target) => (
-          <ProfitTarget
-            key={target.id}
-            onChange={setProfitTarget}
-            onBlur={updateProfitTarget}
-            onDelete={removeProfitTarget}
-            {...target}
-          />
-        ))}
-      </div>
+    <>
+      <TableContainer>
+        <Table
+          style={{
+            borderCollapse: "separate",
+            borderSpacing: "0px 4px",
+          }}
+        >
+          <TableHead>
+            <TableRow className={styles.tableHead}>
+              <TableCell
+                padding="none"
+                style={{ ...tableHeaderStyles, width: "20%" }}
+              >
+                Profit
+              </TableCell>
+              <TableCell
+                padding="none"
+                style={{ ...tableHeaderStyles, width: "40%" }}
+              >
+                Target price
+              </TableCell>
+              <TableCell
+                padding="none"
+                align="right"
+                colSpan={2}
+                style={{ ...tableHeaderStyles, width: "40%" }}
+              >
+                Amount to sell
+              </TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {profitTargets.map((target) => (
+              <ProfitTarget
+                key={target.id}
+                onChange={setProfitTarget}
+                onBlur={updateProfitTarget}
+                onDelete={removeProfitTarget}
+                {...target}
+              />
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
       {currentValidationError && (
         <ErrorMessage className={styles.error}>
           {currentValidationError}
@@ -58,7 +101,7 @@ const ProfitTargetList = observer(() => {
       <div className={styles.projectedProfit}>
         <ProjectedProfit total={projectedProfit} />
       </div>
-    </div>
+    </>
   );
 });
 

@@ -19,6 +19,7 @@ type Props = Omit<
   "variant" | "onChange" | "className" | "classes" | "error"
 > & {
   error?: ReactNode;
+  isError?: boolean;
   InputLabelProps?: Omit<
     TextFieldProps["InputLabelProps"],
     "className" | "classes"
@@ -40,6 +41,7 @@ const TextInput = ({
   onBlur,
   InputLabelProps,
   InputProps,
+  isError,
   errorPlacement = "top",
   size = "medium",
   ...rest
@@ -50,7 +52,7 @@ const TextInput = ({
 
   const inputClasses: MUIInputProps["classes"] = {
     root: cn(styles.inputWrapper, {
-      [styles.error]: Boolean(error),
+      [styles.error]: isError,
     }),
     focused: cn(styles.inputWrapper, styles.focused),
     adornedEnd: cn(styles.inputWrapper, styles.adornedEnd),
@@ -68,7 +70,6 @@ const TextInput = ({
     <Tooltip
       open={isFocused && !!error}
       message={error ?? ""}
-      // isError
       placement={errorPlacement}
     >
       <TextField
