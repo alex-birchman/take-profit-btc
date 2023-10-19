@@ -34,8 +34,8 @@
 
 Для запуска проекта локально, выполните следующие шаги:
 
-1. Клонируйте репозиторий: `git clone https://github.com/your-username/your-repo.git`
-2. Перейдите в директорию проекта: `cd your-repo`
+1. Клонируйте репозиторий: `git clone https://github.com/alex-birchman/take-profit-btc.git`
+2. Перейдите в директорию проекта: `cd take-profit-btc`
 3. Установите зависимости: `npm install`
 4. Запустите проект: `npm start`
 
