@@ -1,0 +1,9 @@
+.root {
+  min-width: auto;
+  padding: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: 2px solid #0083ff;
+  }
+}

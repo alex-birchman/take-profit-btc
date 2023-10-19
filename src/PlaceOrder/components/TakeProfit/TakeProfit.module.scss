@@ -1,0 +1,39 @@
+.root {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #2b273b;
+}
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+
+  &Active {
+    color: #ffffff;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 8px;
+}
+
+.footer {
+  margin-top: 24px;
+}

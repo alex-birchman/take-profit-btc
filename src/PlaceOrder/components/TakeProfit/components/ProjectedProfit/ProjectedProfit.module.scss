@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.label {
+  white-space: nowrap;
+}
+
+.delimiter {
+  width: 100%;
+  border: none;
+  height: 1px;
+  opacity: 0.2;
+  border-top: 1px dotted #818c99;
+
+  margin: 0;
+  margin-top: auto;
+}
+
+.sum {
+  display: flex;
+  gap: 2px;
+
+  &Number {
+    color: #ffffff;
+  }
+}
