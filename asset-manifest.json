@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/take-profit-btc/static/css/main.8f5f3261.chunk.css",
-    "main.js": "/take-profit-btc/static/js/main.237478d6.chunk.js",
-    "main.js.map": "/take-profit-btc/static/js/main.237478d6.chunk.js.map",
+    "main.css": "/take-profit-btc/static/css/main.b59b9dfe.chunk.css",
+    "main.js": "/take-profit-btc/static/js/main.e061c6a3.chunk.js",
+    "main.js.map": "/take-profit-btc/static/js/main.e061c6a3.chunk.js.map",
     "runtime-main.js": "/take-profit-btc/static/js/runtime-main.91bfd2cd.js",
     "runtime-main.js.map": "/take-profit-btc/static/js/runtime-main.91bfd2cd.js.map",
-    "static/js/2.e5f21af0.chunk.js": "/take-profit-btc/static/js/2.e5f21af0.chunk.js",
-    "static/js/2.e5f21af0.chunk.js.map": "/take-profit-btc/static/js/2.e5f21af0.chunk.js.map",
+    "static/js/2.ca6f2090.chunk.js": "/take-profit-btc/static/js/2.ca6f2090.chunk.js",
+    "static/js/2.ca6f2090.chunk.js.map": "/take-profit-btc/static/js/2.ca6f2090.chunk.js.map",
     "index.html": "/take-profit-btc/index.html",
-    "static/css/main.8f5f3261.chunk.css.map": "/take-profit-btc/static/css/main.8f5f3261.chunk.css.map",
-    "static/js/2.e5f21af0.chunk.js.LICENSE.txt": "/take-profit-btc/static/js/2.e5f21af0.chunk.js.LICENSE.txt",
+    "static/css/main.b59b9dfe.chunk.css.map": "/take-profit-btc/static/css/main.b59b9dfe.chunk.css.map",
+    "static/js/2.ca6f2090.chunk.js.LICENSE.txt": "/take-profit-btc/static/js/2.ca6f2090.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/take-profit-btc/static/media/Inter-SemiBold.d8872b21.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.91bfd2cd.js",
-    "static/js/2.e5f21af0.chunk.js",
-    "static/css/main.8f5f3261.chunk.css",
-    "static/js/main.237478d6.chunk.js"
+    "static/js/2.ca6f2090.chunk.js",
+    "static/css/main.b59b9dfe.chunk.css",
+    "static/js/main.e061c6a3.chunk.js"
   ]
 }
